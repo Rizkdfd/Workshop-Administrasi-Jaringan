@@ -1,19 +1,24 @@
-<div style="text-align: center;">
 
-**Workshop Administrasi Jaringan**
 
+<p align=center>
+ **Workshop Administrasi Jaringan**
+
+<p align=center>
 Diampu oleh<br>
 Dr. Ferry Astika Saputra ST, M.Sc.
 
+<p align=center>
 **<br>Praktikum 1: Manajemen Sistem**
 
-![Logo PENS](img/LogoPENS.png)
 
+ ![Logo PENS](img/LogoPENS.png)
+
+<p align=center>
 <br>Disusun Oleh<br>
 Rizka Dwi Fajriyah Darmayanti<br>
 3121600050; 2 D4 IT B
 
-<br><br><br>PROGRAM STUDI TEKNIK INFORMATIKA<br>
+<p align=center><br><br><br>PROGRAM STUDI TEKNIK INFORMATIKA<br>
 POLITEKNIK ELEKTRONIKA NEGERI SURABAYA<br>
 PEMERINTAH KOTA SURABAYA<br>
 TAHUN 2023<br>
