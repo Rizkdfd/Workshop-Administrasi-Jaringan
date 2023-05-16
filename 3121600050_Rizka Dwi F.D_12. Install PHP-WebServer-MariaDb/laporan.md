@@ -1,12 +1,12 @@
-# Laporan Minggu 13
+# Laporan Minggu 12
 ![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
 ![](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
 ![](https://img.shields.io/badge/VirtualBox-21416b?style=for-the-badge&logo=VirtualBox&logoColor=white)
 ![](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![](https://img.shields.io/badge/Apache-D22128?style=for-the-badge&logo=Apache&logoColor=white)
-![](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
 
-## Instalasi Composer dan Laravel
+## Instalasi PHP, Apache, dan MariaDB 
 
 ## Kelompok 5
 1. Emha Aji Putra Zaman (3121600042)
@@ -14,37 +14,50 @@
 3. Rizka Dwi Fajriyah (3121600050)
 
 #
-1. Install Composer dengan curl :
+1. Update sistem dengan perintah :
    ```
-   curl -sS https://getcomposer.org/installer | php
-   ```
-2. Jalankan perintah ini secara berurutan agar composer dapat dijalankan secara global :
-   ```
-   sudo mv composer.phar /usr/local/bin/composer
-   ```
-   ```
-   sudo chmod +x /usr/local/bin/composer
-   ```
-3. Cek apakah composer sudah terinstall dengan perintah :
-   ```
-   composer
+   sudo apt-get update -y && sudo apt-get upgrade -y
    ```
    Gambar : <br>
-   ![](image/composer.png)
-4. Install Laravel :
+   ![](image/apt_update_upgrade.png)
+2. Install Apache Web Server dengan perintah :
    ```
-   composer create-project laravel/laravel kelompok_5
-   ```
-5. Jalankan laravel dengan perintah :
-   ```
-   php artisan serve --host=IP --port=8000
-   ```
-   Di sini menggunakan IP : 192.168.5.21
-   Gambar : <br>
-   ![](image/laravel_work.png)
-6.  Setting allow-transfer :
-   ```
-   sudo nano /etc/bind/named.conf.local
+   sudo apt install apache2
    ```
    Gambar : <br>
-   ![](image/allow-transfer.png)
+   ![](image/install_apache2.png)
+3. Setelah terinstal maka langkah selanjutnya yaitu menghidupkan servisnya dengan perintah :
+   ```
+   sudo systemctl enable apache2 && sudo systemctl start apache2
+   ```
+   Gambar : <br>
+   ![](image/localhost.png)
+4. Cek apakah servis apache2 sudah berjalan :
+   ```
+   sudo systemctl status apache2
+   ```
+   Gambar : <br>
+   ![](image/apache-status.png)
+5. Install PHP dengan perintah :
+   ```
+   sudo apt-get install php8.1 php8.1-cli php8.1-common php8.1-imap php8.1-redis php8.1-snmp php8.1-xml php8.1-zip php8.1-mbstring php8.1-curl
+   ```
+   Gambar : <br>
+   ![](image/install_php.png)
+6. Cek apakah PHP sudah terinstal dengan perintah :
+   ```
+   php -v
+   ```
+   Gambar : <br>
+   ![](image/php-v.png)
+7. Install MariaDB
+   ```
+   sudo apt install mariadb-server
+   ```
+   Gambar : <br>
+   ![](image/install_mariadb.png)
+8. Membuat password database dengan perintah :
+   ```
+   sudo mysql_secure_installation
+   ```
+   Setelah itu diminta untuk mengisi inputan, untuk inputannya dijawab y, n, y, dan y
