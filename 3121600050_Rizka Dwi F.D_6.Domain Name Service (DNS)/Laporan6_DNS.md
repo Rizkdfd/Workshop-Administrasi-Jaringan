@@ -27,7 +27,7 @@ Domain Name Service (DNS) adalah layanan Internet yang memetakan alamat IP dan n
    sudo nano /etc/bind/named.conf.options 
    ```
    Gambar : <br>
-   ![](assets/options.JPG)
+   ![](assets/options.jpg)
 3. Restart kembali service bind 9 
    ```
    sudo systemctl restart bind9.service
@@ -37,7 +37,7 @@ Domain Name Service (DNS) adalah layanan Internet yang memetakan alamat IP dan n
    sudo nano /etc/bind/named.conf.local
    ```
    Gambar : <br>
-   ![](assets/forward-zone-file.JPG)
+   ![](assets/forward-zone-file.jpg)
 5. Membuat zona file baru dengan melakukan copy file yang sudah ada dengan perintah :
    ```
    sudo cp /etc/bind/db.local /etc/bind/db.kampus-05.takehome.com
@@ -47,7 +47,7 @@ Domain Name Service (DNS) adalah layanan Internet yang memetakan alamat IP dan n
    sudo nano /etc/bind/db.kampus-05.takehome.com
    ```
    Gambar : <br>
-   ![](assets/db-kampus.JPG)
+   ![](assets/db-kampus.jpg)
 7. Restart kembali bind9 dengan perintah :
    ```
    sudo systemctl restart bind9.service
@@ -72,7 +72,7 @@ Domain Name Service (DNS) adalah layanan Internet yang memetakan alamat IP dan n
     sudo nano /etc/bind/db.192
     ```
     Gambar : <br>
-    ![](assets/db-192.JPG)
+    ![](assets/db-192.jpg)
 12. Restart kembali bind9 dengan perintah :
       ```
       sudo systemctl restart bind9.service
@@ -82,12 +82,12 @@ Domain Name Service (DNS) adalah layanan Internet yang memetakan alamat IP dan n
       sudo nano /etc/resolv.conf
       ```
       Gambar : <br>
-      ![](assets/resolv.JPG)
+      ![](assets/resolv.jpg)
 15. Testing
     - ping terhadap `kampus-05.takehome.com` <br>
       Gambar : <br>
-      ![](assets/ping1.JPG)
+      ![](assets/ping1.jpg)
     - ping terhadap sub domain `ns.kampus-05.takehome.com` <br>
       Gambar : <br>
-      ![](assets/ping4.JPG) 
+      ![](assets/ping4.jpg) 
     
