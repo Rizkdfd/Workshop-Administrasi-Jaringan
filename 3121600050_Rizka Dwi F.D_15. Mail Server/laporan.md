@@ -9,7 +9,7 @@
 ## Kelompok 5
 1. Emha Aji Putra Zaman (3121600042)
 2. Marits Ikmal Yasin (3121600047)
-3. Rizka Dwi Fajriyah (3121600050)
+3. Rizka Dwi Fajriyah Darmayanti (3121600050)
 
 #
 1. Install Postfix dengan perintah :
